@@ -46,13 +46,12 @@ h3 {
 .box-two {
   display: flex;
   flex-direction: row;
-  justify-content: strech;
   width: 90%;
   height: 40vh;
   margin: 5% 5%;
 }
 .password {
-  border: 1px solid;
+  border: 1px solid  #04aa0473 ;
   width: 70%;
   height: 5vh;
   border-radius: 4px;
