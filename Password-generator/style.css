@@ -1,12 +1,12 @@
 body {
   background-color: #111827;
-  width: fit-content;
+  width: 90%;
   color: white;
   text-align: center;
   font-family: sans-serif;
 }
 .container {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 10%;
@@ -16,7 +16,7 @@ body {
 .box-one {
   border: 1px solid #0e121cfc;
   width: 400px;
-  height: 55vh;
+  height: 300px;
   background-color: #0e121cfc;
   border-radius: 2px;
 }
@@ -51,19 +51,20 @@ h3 {
   margin: 5% 5%;
 }
 .password {
-  border: 1px solid  #04aa0473 ;
+  border: 1px solid #04aa0473 ;
   width: 70%;
   height: 5vh;
   border-radius: 4px;
   margin: 0% 2% 2% 2%;
 }
+/*
 @media (max-width: 400px) {
   .container {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   .box-one {
     width: 400px;
     margin: 0;
@@ -104,3 +105,4 @@ h3 {
     margin: 0;
   }
 }
+*/
