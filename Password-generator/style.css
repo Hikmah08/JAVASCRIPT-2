@@ -15,8 +15,8 @@ body {
 }
 .box-one {
   border: 1px solid #0e121cfc;
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 320px;
   background-color: #0e121cfc;
   border-radius: 2px;
 }
@@ -56,6 +56,16 @@ h3 {
   height: 5vh;
   border-radius: 4px;
   margin: 0% 2% 2% 2%;
+}
+@media (max-width:380px) {
+  .box-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 40vh;
+    margin: 5% 5%;
+  }
 }
 /*
 @media (max-width: 400px) {
