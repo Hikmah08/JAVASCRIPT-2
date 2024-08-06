@@ -17,7 +17,7 @@ passwordButton.addEventListener("click", function () {
     renderPassword() 
   });
   function renderPassword() {
-    for (let i = 0; i <16; i++) {
+    for (let i = 15; i <16; i+=15) {
         passwordEl.textContent += characters[i]
         passwordEl2.textContent += characters[i]
     }
