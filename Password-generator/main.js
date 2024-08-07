@@ -16,14 +16,40 @@ function generateRandomPassword() {
 }
 console.log(generateRandomPassword())
 function givePassword() {
+    const passwordButton = document.getElementById("password-button");
+    const passwordEl = document.getElementById("password-el");
+    const passwordEl2 = document.getElementById("password-el2");
+  
+    if (!passwordButton || !passwordEl || !passwordEl2) {
+      console.error("One or more DOM elements are missing.");
+      return;
+    }
+
     passwordButton.addEventListener("click", function() {
         const password1 = generateRandomPassword();
         const password2 = generateRandomPassword();
         passwordEl.textContent = password1;
     passwordEl2.textContent = password2;
     });
+
+
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      console.log('Password copied to clipboard!');
+    }).catch(err => {
+      console.error('Failed to copy password: ', err);
+    });
+  }
+  passwordEl.addEventListener("click", function() {
+    copyToClipboard(passwordEl.textContent);
+  });
+
+  passwordEl2.addEventListener("click", function() {
+    copyToClipboard(passwordEl2.textContent);
+  });
 }
-givePassword()
+document.addEventListener("DOMContentLoaded", givePassword);
 /*
 const characters = [
     "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T",
